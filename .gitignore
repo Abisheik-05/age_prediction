@@ -18,6 +18,13 @@ package-lock.json
 # Environment files
 .env
 .env.local
+backend/.env
+backend/.venv310/
+
+# Local runtime files
+.venv310/
+uploads/
+__pycache__/*.pyc
 
 # Dataset (too large for Git)
 ai/dataset/
