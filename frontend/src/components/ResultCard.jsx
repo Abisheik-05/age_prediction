@@ -9,6 +9,7 @@ function ResultCard({ result }) {
         <div className="result-values">
           <p>🎂 <strong>Predicted Age:</strong> {result.age} Years</p>
           <p>🎯 <strong>Confidence:</strong> <span className="confidence-badge">{result.confidence}%</span></p>
+          <p>⏱️ <strong>Inference Time:</strong> {result.inference_time ?? 0.0}s</p>
         </div>
         <p className="timestamp">Analyzed {timestamp}</p>
       </div>

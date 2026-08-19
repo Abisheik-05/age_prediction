@@ -29,6 +29,9 @@ ai/models/
 backend/uploads/
 backend/age_images/
 
+#models
+backend/models/*.pth
+
 # Logs
 *.log
 age_prediction_service.log

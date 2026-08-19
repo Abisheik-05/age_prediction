@@ -1,0 +1,25 @@
+SUBMISSION MODEL EVALUATION
+================================================================================
+Model: C:\Users\ADMIN\Desktop\npn\age_prediction\ai\models\submission_model.pth
+Dataset: C:\Users\ADMIN\Desktop\npn\age_prediction\ai\dataset\test
+Total Images: 47568
+MAE: 5.2281
+RMSE: 7.7267
+Median Absolute Error: 3.5815
+Within 1 year: 16.56%
+Within 3 years: 43.48%
+Within 5 years: 63.17%
+Within 10 years: 86.93%
+================================================================================
+--- Error by age range ---
+Age  0-10 : MAE=2.07  (n=1030)
+Age 10-20 : MAE=6.31  (n=2891)
+Age 20-30 : MAE=4.46  (n=12137)
+Age 30-40 : MAE=4.37  (n=14241)
+Age 40-50 : MAE=5.19  (n=9060)
+Age 50-60 : MAE=6.77  (n=4555)
+Age 60-70 : MAE=8.27  (n=2285)
+Age 70-80 : MAE=10.83  (n=975)
+Age 80-90 : MAE=11.44  (n=317)
+Age 90-100 : MAE=13.99  (n=77)
+================================================================================
