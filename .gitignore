@@ -45,7 +45,8 @@ age_prediction_service.log
 
 # Vite
 frontend/dist/
-
+/NewData
+NewData/
 # IDE
 .vscode/
 .idea/
