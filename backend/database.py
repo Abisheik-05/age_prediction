@@ -11,3 +11,5 @@ client = AsyncIOMotorClient(MONGO_URI)
 db = client["AgeFinder1"]      # Database name
 
 users_collection = db["db"]    # Collection name
+
+feedback_collection = db["feedback"]  # Collection name for feedback

@@ -4,6 +4,7 @@ from contextlib import asynccontextmanager
 
 import torch
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from database import client
 from .config import detect_device, settings
@@ -39,6 +40,17 @@ app = FastAPI(
     title=settings.app_title,
     version=settings.version,
     lifespan=lifespan,
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 app.include_router(health_router, prefix="/api")
